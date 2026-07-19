@@ -7,4 +7,4 @@ An ultra-fast, zero-dependency compiled `.env` loader designed for high-performa
 Add this package to your project repository via Composer:
 
 ```bash
-composer require yourgithubusername/fast-env
+composer require mjisoton/fast-env
