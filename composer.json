@@ -3,6 +3,7 @@
     "description": "An ultra-fast compiled .env loader for PHP with built-in auto-invalidation.",
     "type": "library",
     "license": "MIT",
+    "homepage": "https://github.com/mjisoton/fast-env",
     "authors": [
         {
             "name": "mjisoton",
