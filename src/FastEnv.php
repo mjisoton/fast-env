@@ -35,13 +35,15 @@ class FastEnv {
                 $line = strtok($buffer, "\r\n");
                 while ($line !== false) {
                     $line = trim($line);
+                    
                     if ($line !== '' && isset($line[0]) && $line[0] !== '#') {
                         $pos = strpos($line, '=');
                         if ($pos !== false) {
                             $key = rtrim(substr($line, 0, $pos));
                             $value = ltrim(substr($line, $pos + 1));
 
-                            if (($value[0] === '"' || $value[0] === "'") && $value[0] === $value[strlen($value) - 1]) {
+                            // 2. Safe check for empty values before checking quotes
+                            if (isset($value[0]) && ($value[0] === '"' || $value[0] === "'") && $value[0] === $value[strlen($value) - 1]) {
                                 $value = substr($value, 1, -1);
                             }
                             $variables[$key] = $value;
