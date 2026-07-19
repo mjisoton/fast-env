@@ -1,0 +1,22 @@
+{
+    "name": "mjisoton/fast-env",
+    "description": "An ultra-fast compiled .env loader for PHP with built-in auto-invalidation.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mjjisoton",
+            "email": "michel@isoton.dev"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "mjisoton\\FastEnv\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
