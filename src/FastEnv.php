@@ -35,7 +35,7 @@ class FastEnv {
                 $line = strtok($buffer, "\r\n");
                 while ($line !== false) {
                     $line = trim($line);
-                    if ($line !== '' && $line[0] !== '#') {
+                    if ($line !== '' && isset($line[0]) && $line[0] !== '#') {
                         $pos = strpos($line, '=');
                         if ($pos !== false) {
                             $key = rtrim(substr($line, 0, $pos));
