@@ -6,7 +6,7 @@ namespace mjisoton\FastEnv;
  * FastEnv - Ultra-Fast Compiled Environment Loader with Auto-Invalidation
  * Optimized to minimize upfront disk access and remove slow error-suppression operators.
  */
-class EnvCompiler {
+class FastEnv {
 
     /**
      * Bootstraps the application environment.
